@@ -118,8 +118,13 @@ echo "当前时间: $now"
 echo
 echo -e "妥善保存助记词,私钥文件夹及keys.txt文件,请勿丢失!!!!!!!!!!!!!!"
 echo
-echo -e "本地备份路径(用于下载到本地保存,请勿丢失!!!!!!!!!!!!!!):\n /root/files/钱包地址/keys"
+echo -e "本地备份路径(用于下载到本地保存,请勿丢失!!!!!!!!!!!!!!):\n /root/files/$address/keys"
 echo
-echo -e "私钥文件夹路径(当前文件执行所需的私钥文件夹,请勿删除):\n /root/files/"
+echo -e "私钥文件夹路径(当前文件执行所需的私钥文件夹,请勿删除):\n /root/files/keys"
 echo
-echo -e "助记词及keys文件夹路径:\n /root/files/"
+# 输出keys.txt文件路径及内容
+echo -e "助记词及keys文件夹路径:\n /root/files/keys"
+echo
+echo "地址和助记词: "
+echo "===================================================================================================="
+cat "/root/files/keys.txt"

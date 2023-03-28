@@ -1,7 +1,7 @@
 
-# celestia 轻节点 docker启动脚本 version==0.6.3
+# celestia 轻节点 docker启动脚本 version==sha-747c9e5
 ### 简单启动 
-docker run -e NODE_TYPE=light -e P2P_NETWORK=mocha ghcr.io/celestiaorg/celestia-node:0.6.3 celestia light start --core.ip https://rpc-mocha.pops.one --gateway --gateway.addr 127.0.0.1 --gateway.port 26659 --p2p.network mocha
+docker run -e NODE_TYPE=light -e P2P_NETWORK=mocha ghcr.io/celestiaorg/celestia-node:sha-747c9e5 celestia light start --core.ip https://rpc-mocha.pops.one --gateway --gateway.addr 127.0.0.1 --gateway.port 26659 --p2p.network mocha
 
 # 脚本启动
 ## linux系统需要 centos7.6 64bit

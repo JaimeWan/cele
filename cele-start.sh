@@ -83,7 +83,7 @@ rm -rf ./temp.log
 echo "生成docker-compose.yml文件"
 echo "services:
     light_node:
-        image: \"ghcr.io/celestiaorg/celestia-node:0.6.3\"
+        image: \"ghcr.io/celestiaorg/celestia-node:sha-747c9e5\"
         command: >
             celestia light start
             --core.ip https://rpc-mocha.pops.one
